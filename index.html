@@ -1,0 +1,152 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="CK-CSS3.css">
+    <link rel="shortcut icon" href="CKlogo.ico" type="image/x-icon">
+    <link rel="icon" href="CKlogo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <title>Under Constructiion</title>
+
+
+  </head>
+
+
+  <body>
+
+
+    <div class="topnav" id="myTopnav">
+      <a href="index.html"><i class="fab fa-fort-awesome-alt"></i><br>Home</a>
+      <a href="CK-Gallery.html"><i class="far fa-image"></i><br>Gallery</a>
+      <a href="CK-Contact.html"><i class="far fa-envelope"></i><br>Contact</a>
+      <a href="CK-ComingSoon.html"><i class="fas fa-user-circle"></i><br>About</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-space-shuttle" style="font-size:40px"></i>
+      </a>
+    </div>
+
+    <div style="padding-left:16px">
+    </div>
+
+    <script>
+    function myFunction() { //Function Name
+        var x = document.getElementById("myTopnav"); //Calls element by ID when clicked
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+
+
+    <style>
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    .bgimg {
+        background-image: url("abstract.jpg");
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 25px;
+    }
+
+    .logo{
+      padding: 40px;
+    }
+
+    .topleft {
+        position: absolute;
+        top: 0;
+        left: 16px;
+    }
+
+  .middle{
+  font-family: Impact, Charcoal, sans-serif;
+  font-style: italic;
+  color: #4dff88;
+  }
+
+    .bottomleft {
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+    }
+
+    .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    hr {
+        margin: auto;
+        width: 40%;
+    }
+    </style>
+
+
+    <div class="bgimg">
+      <div class="topleft">
+        <img src="CK-logo1.gif" class="logo" alt="">
+      </div>
+      <div class="middle">
+        <h1>COMING SOON!</h1>
+        <hr>
+        <p id="demo" style="font-size:30px"></p>
+      </div>
+      <div class="bottomleft">
+      </div>
+    </div>
+
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var countdownfunction = setInterval(function() {
+
+        // Get todays date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now an the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+            clearInterval(countdownfunction);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+    }, 1000);
+    </script>
+
+
+
+    <footer class="footer">
+        <p>occolton design</p>
+
+    <a href="index.html"><i class="fab fa-fort-awesome-alt" style="font-size:24px;color:cyan"></i>Home</a>
+    <a href="CK-Gallery.html"><i class="far fa-image" style="font-size:24px;color:cyan"></i>Gallery</a>
+    <a href="CK-Contact.html"><i class="far fa-envelope" style="font-size:24px;color:cyan"></i>Contact</a>
+    <a href="CK-ComingSoon.html"><i class="fas fa-user-circle" style="font-size:24px;color:cyan"></i>About</a>
+  </body>
+</html>
