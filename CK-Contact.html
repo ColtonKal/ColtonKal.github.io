@@ -2,46 +2,17 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-
+    <title>Forms</title>
 <link rel="stylesheet" href="CK-CSS3.css">
 <link rel="shortcut icon" href="CKlogo.ico" type="image/x-icon">
 <link rel="icon" href="CKlogo.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-    <title>Colton Kalnins, Graphic Designer</title>
-
-
-<style media="screen">
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-  overflow-x: hidden;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-</style>
-
-
-
   </head>
   <body>
-   <img src="circuits.jpg" class="image">
 
-<!--navbar-->
+<img src="circuits.jpg" class="image">
+
 <div class="topnav" id="myTopnav">
   <a href="index.html"><i class="fab fa-fort-awesome-alt"></i><br>Home</a>
   <a href="CK-Gallery.html"><i class="far fa-image"></i><br>Gallery</a>
@@ -66,39 +37,35 @@ function myFunction() { //Function Name
 }
 </script>
 
+<form>
 
-   <h1 style="color:#8000ff;">COLTON KALNINS</h1>
-   <h2 style="color:crimson;">GRAPHIC DESIGNER</h2>
-   <h3 style="color:#4dff88;">WEB DEVELOPER</H3>
+  <fieldset>
+
+ <label><b>Your Name:</label>
+   <input type="text" name="First Name" value="">
+<br>
+ <label>Email Address:</label>
+   <input type="text" name="First Name" value="">
+<br>
 
 
-   <img src="CK-logo1.gif" class="logo1">
+<br>
+ <h4>Write your message or just say hello:</b></h4>
+<textarea name="name" rows="8" cols="80"></textarea><br>
+
+<br>
+<br>
+<input type="Submit" name="Submit" value="Submit">
+<button type="button" name="button">Click here to Finish</button>
 
 
-   </style>
+</fieldset>
 
-<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+</form>
 
- </head>
- <body>
-
-<center>
-   <img src="CK-101-product.jpg" class="img1" data-aos="fade-up"></div>
-   <img src="CK-101-product.jpg" class="img1" data-aos="fade-down"></div>
-   <img src="CK-101-product.jpg" class="img1" data-aos="fade-left"></div>
-   <img src="CK-101-product.jpg" class="img1" data-aos="fade-right"></div>
-   <img src="CK-101-product.jpg" class="img1" data-aos="flip-up"></div>
-   <img src="CK-101-product.jpg" class="img1" data-aos="flip-down"></div>
-   <img src="CK-101-product.jpg" class="img1" data-aos="zoom-out"></div>
-   <img src="CK-101-product.jpg" class="img1" data-aos="zoom-out"></div>
-
-<script type="text/javascript">
-AOS.init({
-duration: 1200,
-})
-</script>
-<center>
+<br><br><br><br><br>
+<img src="CK-logo1.gif" class="logo1">
+<br>
 
 
 <footer class="footer">
@@ -108,7 +75,7 @@ duration: 1200,
 <a href="CK-Gallery.html"><i class="far fa-image" style="font-size:24px;color:cyan"></i>Gallery</a>
 <a href="CK-Contact.html"><i class="far fa-envelope" style="font-size:24px;color:cyan"></i>Contact</a>
 <a href="CK-ComingSoon.html"><i class="fas fa-user-circle" style="font-size:24px;color:cyan"></i>About</a>
+</footer>
 
-
-</body>
+  </body>
 </html>
